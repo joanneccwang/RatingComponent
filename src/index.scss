@@ -3,7 +3,7 @@ $dark-blue: #262E38;
 $very-dark-blue: #131518;
 $light-gray: #969FAD;
 $orange: #FC7614;
-$black-gradient: radial-gradient(circle, rgba(35,42,52,1) 0%, rgba(24,30,39,1) 100%);
+$black-gradient: radial-gradient(ellipse at top, rgba(35,42,52,1) 0%, rgba(24,30,39,1) 100%);
 
 :root {
   background-color: $very-dark-blue;
@@ -12,6 +12,11 @@ $black-gradient: radial-gradient(circle, rgba(35,42,52,1) 0%, rgba(24,30,39,1) 1
   font-optical-sizing: auto;
   font-style: normal;
   font-weight: 400;
+}
+
+p {
+  font-size: 16px;
+  line-height: 24px;
 }
 
 
