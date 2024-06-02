@@ -12,11 +12,18 @@ $black-gradient: radial-gradient(ellipse at top, rgba(35,42,52,1) 0%, rgba(24,30
   font-optical-sizing: auto;
   font-style: normal;
   font-weight: 400;
+
+
+}
+
+* {
+  box-sizing: border-box;
 }
 
 p {
   font-size: 16px;
   line-height: 24px;
+  margin: 0px;
 }
 
 

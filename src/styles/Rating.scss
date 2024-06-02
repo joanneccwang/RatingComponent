@@ -25,6 +25,7 @@
   align-items: center;
   justify-content: space-between;
 
+  margin: 24px 0px 32px 0px;
   .rating-button {
     width: 50px;
     height: 50px;
@@ -49,5 +50,22 @@
       background: $orange;
       color: $very-dark-blue;
     }
+  }
+}
+
+.submit-button {
+  height: 45px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30px;
+  color: $very-dark-blue;
+  background-color: $orange;
+  font-weight: 700;
+  letter-spacing: 2px;
+  cursor: pointer;
+  &:hover {
+    background-color: $white;
   }
 }

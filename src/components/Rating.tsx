@@ -39,13 +39,26 @@ const RatingButton = ({
   );
 };
 
-function Rating() {
+const SubmitButton = ({ onSubmit }: { onSubmit: () => void }) => {
+  return (
+    <div className='submit-button' onClick={() => onSubmit()}>
+      SUBMIT
+    </div>
+  );
+};
+
+function Rating({
+  onSubmitRating,
+}: {
+  onSubmitRating: (rating: null | number) => void;
+}) {
   const [rating, setRating] = useState<null | number>(null);
 
   const handleSetRating = (rating: number) => {
     console.log('handled?');
     setRating(rating);
   };
+
   return (
     <div className='rating'>
       <TopIcon />
@@ -55,6 +68,7 @@ function Rating() {
         appreciated to help us improve our offering!
       </p>
       <RatingButton rating={rating} onSetRating={handleSetRating} />
+      <SubmitButton onSubmit={() => onSubmitRating(rating)}></SubmitButton>
     </div>
   );
 }
