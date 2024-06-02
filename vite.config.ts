@@ -7,6 +7,7 @@ import { resolve } from 'path';
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
+  base: '/RatingComponent/',
   resolve: {
     alias: {
       '@': resolve(__dirname, 'src'),
