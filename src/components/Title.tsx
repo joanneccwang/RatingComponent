@@ -1,7 +1,7 @@
 import '@styles/Title.scss';
 
 function Title({ content }: { content: string }) {
-  return <div className='title'>{content}</div>;
+  return <h1 className='title'>{content}</h1>;
 }
 
 export default Title;

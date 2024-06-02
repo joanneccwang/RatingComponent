@@ -9,7 +9,7 @@ import StarIcon from '@/assets/icon-star.svg';
 const TopIcon = () => {
   return (
     <div className='icon'>
-      <img src={StarIcon}></img>
+      <img src={StarIcon} alt='star icon'></img>
     </div>
   );
 };
