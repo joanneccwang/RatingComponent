@@ -26,8 +26,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Frontend Mentor Solution](https://www.frontendmentor.io/solutions/rating-component-using-react-piSi_mLQ5u)
+- Live Site URL: [Live Site](https://joanneccwang.github.io/RatingComponent)
 
 ## My process
 
