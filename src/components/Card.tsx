@@ -9,6 +9,7 @@ function Card() {
   const [isRated, setIsRated] = useState(false); // setIsRated
   const [finalRating, setFinalRating] = useState<null | number>(null);
   const handleSubmitRating = (rating: null | number) => {
+    if (rating === null) return;
     setIsRated(true);
     setFinalRating(rating);
   };
