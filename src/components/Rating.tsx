@@ -24,17 +24,28 @@ const RatingButton = ({
   const ratingButtons = [1, 2, 3, 4, 5];
   return (
     <div className='rating-button-wrapper'>
-      {ratingButtons.map((rate) => (
-        <div
-          key={rate}
-          className={classname('rating-button', {
-            active: rate === rating,
-          })}
-          onClick={() => onSetRating(rate)}
-        >
-          <div>{rate}</div>
-        </div>
-      ))}
+      {ratingButtons.map((rate) => {
+        const ratingId = `rate-${rate}`;
+        return (
+          <div className='rating-button'>
+            <input
+              key={rate}
+              type='radio'
+              name='rating'
+              id={ratingId}
+              onChange={() => onSetRating(rate)}
+            />
+            <label
+              htmlFor={ratingId}
+              className={classname('rating-button-label', {
+                active: rate === rating,
+              })}
+            >
+              {rate}
+            </label>
+          </div>
+        );
+      })}
     </div>
   );
 };
